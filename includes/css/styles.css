@@ -36,7 +36,7 @@
      margin-top:-15px;
    }
    .bar{
-     background: #D5D5D1;
+     <!--background: #D5D5D1;-->
    }
    #searchInput{
      width:200px;
@@ -57,9 +57,7 @@
 
     width: 50%;
 }
-#features{
-  border: 1px solid black;
-}
+
 
 /* --------------------------------------
    Carousel
@@ -79,15 +77,18 @@
    #slide1{
      background: url('../../images/welcome2.jpg')  top center no-repeat;
      font-family: 'Galada', cursive;
+     background-size: cover;
    }
    #slide2{
      background: url('../../images/kawa.jpg') top center no-repeat  ;
      font-family: 'Galada', cursive;
+     background-size: cover;
    }
    #slide3{
      background: url('../../images/home2.png' ) top center no-repeat ;
      font-family: 'Galada', cursive;
-   }
+     background-size:cover;
+      }
 
 
 /* --------------------------------------
@@ -191,6 +192,14 @@ h2{
 #tab12{
   background: #A8D0D2;
 }
+.thumbnail{
+  width: 300px;
+  height:300px;
+}
+#thmb1{
+  width:95%;
+  height:230px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
@@ -207,12 +216,15 @@ h2{
   }
   #slide1{
     background: url('../../images/welcome2_medium.jpg')  top center no-repeat ;
+    background-size:cover;
   }
   #slide2{
     background: url('../../images/kawa.jpg') top center no-repeat ;
+    background-size:cover;
   }
   #slide3{
     background: url('../../images/home2_medium.png') top center no-repeat ;
+    background-size:cover;
   }
   .carousel-caption{
     font-size:14px;
@@ -226,7 +238,6 @@ h2{
     margin-bottom:5px;
     padding-right:10px;
   }
-
 }
 
 /* Large desktop */
